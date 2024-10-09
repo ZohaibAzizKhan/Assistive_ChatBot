@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:dash_chat_2/dash_chat_2.dart';
@@ -351,5 +352,11 @@ Future<void> settings()async{
     );
     questionController.clear();
     onSend(userMessage);
+  }
+  Future<void > copyMessage(String message) async{
+    Clipboard.setData(ClipboardData(text: message)).then((_){
+      speak("Text Copied to ClipBoard Successfully");
+    }
+    );
   }
 }

@@ -209,9 +209,11 @@ class ChatPage extends StatelessWidget {
                           );
                         },
                       ),
-                      messageOptions: const MessageOptions(
+                      messageOptions: MessageOptions(
                         showTime: true,
-                        // showCurrentUserAvatar: true,
+                        onPressMessage: (ChatMessage message){
+                          chatProvider.copyMessage( message.text);
+                        },
                         containerColor: Colors.black,
                         textColor: Colors.white,
                         currentUserTextColor: Colors.white,
