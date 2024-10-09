@@ -1,3 +1,4 @@
+
 # edu_vision
 This Flutter chat application leverages the DashChat package to create an interactive messaging interface with integrated Text-to-Speech (TTS) functionality. The app features a user-friendly design that enhances communication through voice and text.
 
@@ -12,3 +13,5 @@ Features:<br>
 **Gesture Support:** Long press to activate speech-to-text input for seamless communication.<br>
 **Playback Controls:** Play, pause, and repeat spoken messages.<br>
 A new Flutter project.<br>
+**App Logo**<br>
+![Project Logo](https://github.com/ZohaibAzizKhan/Assistive_ChatBot/assets/Icon/Edu_Vision.png)
