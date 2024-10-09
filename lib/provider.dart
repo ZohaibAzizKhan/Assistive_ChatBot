@@ -353,6 +353,7 @@ Future<void> settings()async{
     questionController.clear();
     onSend(userMessage);
   }
+  //Copy Text to ClipBoard
   Future<void > copyMessage(String message) async{
     Clipboard.setData(ClipboardData(text: message)).then((_){
       speak("Text Copied to ClipBoard Successfully");
