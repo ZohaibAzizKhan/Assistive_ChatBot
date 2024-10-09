@@ -1,6 +1,6 @@
 # edu_vision
 This Flutter chat application leverages the DashChat package to create an interactive messaging interface with integrated Text-to-Speech (TTS) functionality. The app features a user-friendly design that enhances communication through voice and text.
-
+ 
 #Features:
 Chat Interface: Users can send and receive messages in real time.
 Text-to-Speech Settings: Users can customize TTS options, including:
