@@ -14,4 +14,4 @@ Features:<br>
 **Playback Controls:** Play, pause, and repeat spoken messages.<br>
 A new Flutter project.<br>
 **App Logo**<br>
-![Project Logo](https://github.com/ZohaibAzizKhan/Assistive_ChatBot/assets/Icon/Edu_Vision.png)
+![Project Logo](https://github.com/ZohaibAzizKhan/Assistive_ChatBot/blob/master/assets/Icons/Edu_vision.png)
