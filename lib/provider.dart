@@ -174,13 +174,14 @@ Future<void> settings()async{
           text: accumulatedResponse,
         );
         messages.insert(0, message);
-        chatConversationHistory.add(Content(
-            role: "model", parts: [Parts(text: accumulatedResponse)])); // Update history
+         // Update history
       }
 
       notifyListeners();
 
     }, onDone: () {
+      chatConversationHistory.add(Content(
+          role: "model", parts: [Parts(text: accumulatedResponse)]));
       removeUserTyping(geminiUser.id);
       geminiResponse = accumulatedResponse;
       lastSpokenText = accumulatedResponse;
@@ -211,7 +212,7 @@ Future<void> settings()async{
   }
 
   Future<String> extractTextFromFile(File file, String extension) async {
-    String apiUrl = 'http://curiously-verified-cockatoo.ngrok-free.app/upload'; // Replace with your Flask server URL
+    String apiUrl = 'http://zohaibaziz977.pythonanywhere.com/upload'; // Replace with your Flask server URL
 
     var request = http.MultipartRequest('POST', Uri.parse(apiUrl));
     request.files.add(await http.MultipartFile.fromPath('file', file.path));
