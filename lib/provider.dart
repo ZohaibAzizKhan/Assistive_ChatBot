@@ -16,7 +16,7 @@ class ChatProvider extends ChangeNotifier {
   FlutterTts flutterTts=FlutterTts();
   stt.SpeechToText speechToText = stt.SpeechToText();
   ChatUser currentUser = ChatUser(id: '0', firstName: 'user');
-  ChatUser geminiUser = ChatUser(id: '1', firstName: 'gemini');
+  ChatUser geminiUser = ChatUser(id: '1', firstName: 'gemma');
   List<ChatMessage> messages = [];
   double speechRate = 0.5;
   double speechPitch = 1.0;

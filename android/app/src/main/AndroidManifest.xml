@@ -15,7 +15,7 @@
         </intent>
     </queries>
     <application
-        android:label="Edu Vision"
+        android:label="Access Doc"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -12,7 +12,7 @@ class ChatScreen extends StatelessWidget {
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
-        title: const Text('Edu vision'),
+        title: const Text('Access Doc'),
         centerTitle: true,
       ),
       drawer: _buildDrawer(context),
