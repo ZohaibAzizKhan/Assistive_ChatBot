@@ -60,7 +60,6 @@ Future<void> settings()async{
         child: Text("${voice['name']} (${voice['locale']})"),
       );
     }).toList();
-
     // Set the default voice (optional)
     selectedVoice = voiceItems.first.value;
      // speak("Default selected voice is $selectedVoice");
@@ -71,6 +70,7 @@ Future<void> settings()async{
       'name': voice!["name"]!,
       'locale': voice['locale']!,
     });
+    notifyListeners();
     selectedVoice = voice;
     speak("you select $selectedVoice voice");
     notifyListeners();
