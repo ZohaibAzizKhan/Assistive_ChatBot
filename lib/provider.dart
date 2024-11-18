@@ -221,7 +221,6 @@ Future<void> settings()async{
       var response = await request.send().timeout(const Duration(minutes: 3));
 
       if (response.statusCode == 200) {
-        speak("file uploaded successfully wait text is extracting");
         var responseBody = await http.Response.fromStream(response);
         var data = jsonDecode(responseBody.body);
 
@@ -242,6 +241,15 @@ Future<void> settings()async{
                 result.writeln('Content:');
                 for (var content in slideData['content']) {
                   result.writeln('- $content');
+                }
+              }
+              if (slideData['tables'] != null && slideData['tables'].isNotEmpty) {
+                result.writeln('Tables:');
+                for (var table in slideData['tables']) {
+                  result.writeln('Table: ');
+                  for(var cellData in table){
+                    result.writeln('Row: ${cellData['row']}, Column: ${cellData['column']}, Text: ${cellData['text']}');
+                  }
                 }
               }
             }
