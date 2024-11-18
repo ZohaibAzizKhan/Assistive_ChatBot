@@ -180,8 +180,7 @@ Future<void> settings()async{
       notifyListeners();
 
     }, onDone: () {
-      chatConversationHistory.add(Content(
-          role: "model", parts: [Parts(text: accumulatedResponse)]));
+      chatConversationHistory.add(Content(role: "model", parts: [Parts(text: accumulatedResponse)]));
       removeUserTyping(geminiUser.id);
       geminiResponse = accumulatedResponse;
       lastSpokenText = accumulatedResponse;
